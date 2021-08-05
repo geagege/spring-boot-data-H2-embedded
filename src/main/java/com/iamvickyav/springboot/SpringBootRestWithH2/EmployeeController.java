@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Optional;
 
 @RestController
 public class EmployeeController {
@@ -26,7 +27,7 @@ public class EmployeeController {
     @RequestMapping(value = "/employee", method = RequestMethod.POST)
     String addEmployee(@RequestBody Employee employee){
         Employee savedEmployee = employeeService.save(employee);
-        return "SUCCESS";
+        return "SUCCESS1";
     }
 
     @RequestMapping(value = "/employee", method = RequestMethod.PUT)
@@ -59,12 +60,12 @@ public class EmployeeController {
     @RequestMapping(value = "/employees", method = RequestMethod.POST)
     String addAllEmployees(@RequestBody List<Employee> employeeList){
         employeeService.saveAll(employeeList);
-        return "SUCCESS";
+        return "SUCCESS1";
     }
 
     @RequestMapping(value = "/employees", method = RequestMethod.DELETE)
     String addAllEmployees(){
         employeeService.deleteAll();
-        return "SUCCESS";
+        return "SUCCESS1";
     }
 }
