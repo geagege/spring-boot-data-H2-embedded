@@ -1,5 +1,4 @@
 package com.iamvickyav.springboot.SpringBootRestWithH2;
-
 import com.iamvickyav.springboot.SpringBootRestWithH2.model.Employee;
 import com.iamvickyav.springboot.SpringBootRestWithH2.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
